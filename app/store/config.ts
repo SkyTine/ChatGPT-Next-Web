@@ -64,11 +64,11 @@ export const DEFAULT_CONFIG = {
   models: DEFAULT_MODELS as any as LLMModel[],
 
   modelConfig: {
-    model: "gpt-4o-mini" as ModelType,
+    model: "kimi-k2.6" as ModelType,
     providerName: "OpenAI" as ServiceProvider,
-    temperature: 0.5,
-    top_p: 1,
-    max_tokens: 4000,
+    temperature: 1,
+    top_p: 0.95,
+    max_tokens: 262144,
     presence_penalty: 0,
     frequency_penalty: 0,
     sendMemory: true,
